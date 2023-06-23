@@ -6,7 +6,7 @@
 
 function factorial(n) {
     if (n<0 || n>12){
-      return 'RangeError';
+      throw new RangeError("Input should be between 0 and 12");
     }
     let sum=1
     for (let i=2; i<=n; i++){
